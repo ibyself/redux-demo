@@ -23,7 +23,7 @@ export default class Counter extends Component {
     render() {
         return (
             <div>
-                <span>count is {this.props.count},Person组件中共有{this.props.persons.length}人</span><br />&nbsp;
+                <span>count is {this.props.count}</span><br />&nbsp;
                 <select ref='select_number'>
                     <option value='1'>1</option>
                     <option value='2'>2</option>

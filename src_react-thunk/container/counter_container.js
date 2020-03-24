@@ -1,5 +1,5 @@
 import Counter from '../components/counter'
-import {increment,decrement,incrementAsync} from '../redux/actions/counter_action'
+import {increment,decrement,incrementAsync} from '../redux/action_creators'
 import {connect} from 'react-redux'
 //完整写法
 // function mapReduxStateToProps(state){
@@ -12,4 +12,4 @@ import {connect} from 'react-redux'
 //export default connect(mapReduxStateToProps,mapReduxMethodToProps)(Counter)
 //简写
 
-export default connect(state=>({count:state.count,persons:state.persons}),{increment,decrement,incrementAsync})(Counter)
+export default connect(state=>({count:state}),{increment,decrement,incrementAsync})(Counter)
